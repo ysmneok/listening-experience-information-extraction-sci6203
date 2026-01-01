@@ -13,6 +13,14 @@ This article investigates how listening experience is transformed into textual i
 This methodology enables the semi-automatic extraction of experiential domains (body, memory, place, social relations) by leveraging contextual information in documents. The findings show that perceptual descriptors do more than qualify sonic properties: they function as discursive anchors through which listening is mediated, apprehended through the active orientation of the subject toward what the sound affords for the regulation and modulation of lived experience.
 
 ---
+## Pour reproduire les analyses
+
+```bash
+pip install -r requirements.txt
+python run.py
+```
+---
+
 
 ## Vue d’ensemble du pipeline
 
