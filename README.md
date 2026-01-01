@@ -35,7 +35,7 @@ Les deux pipelines sont entièrement reproductibles et paramétrables via un fic
 
 ## Données d’entrée
 
-Le projet repose sur un corpus de 34 689 critiques musicales issues de Pitchfork et d’Amazon, stockées au format JSON (texte des critiques et métadonnées fusionnés).Les métadonnées principales incluent la source, le genre, le texte de la critique et des identifiants de document.Le chargement du corpus comprend des vérifications de format, des contrôles d’intégrité de base et une normalisation des sources et des genres.
+Le projet repose sur un corpus de 34 689 critiques musicales issues de Pitchfork et d’Amazon, stockées au format JSON (texte des critiques et métadonnées fusionnés).Les métadonnées principales incluent la source, le genre, le texte de la critique et des identifiants de document. Le chargement du corpus comprend des vérifications de format, des contrôles d’intégrité de base et une normalisation des sources et des genres.
 
 ## Vocabulaires contrôlés
 
@@ -43,7 +43,7 @@ Deux lexiques construits manuellement structurent l’analyse :
 - **Adjectifs perceptifs** (affectifs, expressifs, dynamiques)
 - **Descripteurs musico-techniques** (dynamique, tempo, harmonie, articulation, etc.)
 
-Ces vocabulaires sont conçus comme des outils analytiques plutôt que comme des étiquettes de vérité perceptive. Ils permettent d’établir des profils de fréquence, de comparer des distributions par source et par genre, et d’ancrer l’interprétation des résultats statistiques.
+Ces vocabulaires sont conçus comme des outils analytiques. Ils permettent d’établir des profils de fréquence, de comparer des distributions par source et par genre, et d’ancrer l’interprétation des résultats statistiques.
 
 ## Pipeline d’analyses statistiques (pipeline_statistical)
 
@@ -54,10 +54,9 @@ Ce pipeline opère à l’échelle du document et du corpus. Il comprend le char
 ## Pipeline expérientiel : méthodes hybrides (pipeline_experiential)
 
 Ce pipeline vise l’identification de domaines de médiation de l’expérience d’écoute, au-delà des seuls descripteurs lexicaux.
-- **Une première approche repose sur des règles lexicales et syntactiques**, privilégiées pour les genres à forte tradition discursive (classique, opéra) et lorsque la précision interprétable est requise.
+- **Une première approche repose sur des règles lexicales et syntactiques**
 - **En complément, une extraction d’entités en few-shot est réalisée avec le modèle GLiNER2** pour les catégories BODY, MEMORY, PLACE et PERSON, appliquée à un échantillon aléatoire stratifié (trois phrases par critique), avec des seuils spécifiques par catégorie et une stabilisation des taux par bootstrap.
 
-Les deux approches sont volontairement complémentaires : les règles assurent la traçabilité et le contrôle, tandis que GLiNER2 permet une généralisation au-delà des formes lexicales exactes.
 
 ---
 ## Structure du dépôt
