@@ -1,4 +1,4 @@
-# Extraction d’information hybride pour la modélisation de l’expérience d’écoute
+# Extraction d’information hybride pour la modélisation de l’expérience d’écoute (proof of concept)
 
 Documentation pour reproduire :
 - le pipeline d’analyses statistiques
