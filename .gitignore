@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# Project outputs
+outputs/
+results/
+*.png
+*.pdf
+*.jpg
+*.jpeg
+*.svg
+*.eps
+
+# Matplotlib
+.matplotlib/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Legacy/preprocessing artifacts
+mergeddataset/*.py
+mergeddataset/*.json
+mergeddataset/*.csv
+
+# Data files (uncomment if data should not be committed)
+# data/*.json
+# data/*.csv
+
+# Model files / caches (if any)
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+models/
+checkpoints/

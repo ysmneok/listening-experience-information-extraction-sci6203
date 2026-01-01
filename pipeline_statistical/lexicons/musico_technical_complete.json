@@ -1,0 +1,108 @@
+{
+  "musico_technical_flat": [
+    "pp",
+    "pianissimo",
+    "ff",
+    "fortissimo",
+    "intensity",
+    "strength",
+    "soft",
+    "moderate",
+    "loud",
+    "crescendo",
+    "decrescendo",
+    "mixed_loudness",
+
+    "bass",
+    "treble",
+    "high_pitch",
+    "low_pitch",
+
+    "outstanding_rhythm",
+    "vague_rhythm",
+
+    "fast",
+    "slow",
+
+    "marcato",
+    "heavy_accentuation",
+    "light",
+    "fluent_rhythm",
+
+    "staccato",
+    "legato",
+    "tenuto",
+
+    "very_slow",
+    "slow",
+    "moderately_slow",
+    "moderate",
+    "moderately_fast",
+    "fast",
+    "very_fast",
+
+    "dissonant",
+    "complex",
+    "consonant",
+    "simple",
+    "diatonic_major",
+    "diatonic_minor",
+    "blues",
+    "chromatic",
+    "whole_tone",
+    "modal",
+    "quintal_quartal",
+    "ambiguous",
+
+    "atonal",
+    "tonal",
+
+    "major",
+    "minor",
+
+    "melodious",
+    "singable",
+    "unmelodious",
+
+    "serious",
+    "popular",
+
+    "duple",
+    "triple",
+    "quadruple",
+
+    "very_sparse",
+    "moderately_sparse",
+    "more_sparse_than_dense",
+    "more_dense_than_sparse",
+    "moderately_dense",
+    "very_dense",
+
+    "baroque",
+    "classical",
+    "romantic",
+    "impressionist",
+    "modern",
+    "jazz_blues",
+    "contemporary",
+
+    "ascending",
+    "descending",
+    "arch",
+    "undulating",
+    "pendulum",
+    "no_melody",
+
+    "conjunct",
+    "disjunct",
+    "combined",
+    "no_melody",
+
+    "narrow",
+    "moderate",
+    "wide",
+    "very_wide",
+    "other",
+    "no_melody"
+  ]
+}
