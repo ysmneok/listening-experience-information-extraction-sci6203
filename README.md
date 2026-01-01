@@ -1,4 +1,4 @@
-# listening-experience-text-mining
+# Extraction d’information hybride pour la modélisation de l’expérience d’écoute
 
 Documentation pour reproduire :
 - le pipeline d’analyses statistiques
