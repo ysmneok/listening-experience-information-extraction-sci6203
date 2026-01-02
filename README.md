@@ -51,10 +51,10 @@ Ce pipeline opère à l’échelle du document et du corpus. Il comprend le char
 
 - **Les résultats sont exportés sous forme de tableaux et de figures dans le dossier outputs/.**
   
-## Pipeline expérientiel : méthodes hybrides (pipeline_experiential)
+## Pipeline expérientiel : méthodes hybrides extraction d'information (pipeline_experiential)
 
 Ce pipeline vise l’identification de domaines de médiation de l’expérience d’écoute, au-delà des seuls descripteurs lexicaux.
-- **Une première approche repose sur des règles lexicales et syntactiques**
+- **Une première approche repose sur des règles lexicales (regex)**
 - **En complément, une extraction d’entités en few-shot est réalisée avec le modèle GLiNER2** pour les catégories BODY, MEMORY, PLACE et PERSON, appliquée à un échantillon aléatoire stratifié (trois phrases par critique), avec des seuils spécifiques par catégorie et une stabilisation des taux par bootstrap.
 
 
