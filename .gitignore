@@ -32,16 +32,6 @@ env/
 .Trashes
 Thumbs.db
 
-# Project outputs
-outputs/
-results/
-*.png
-*.pdf
-*.jpg
-*.jpeg
-*.svg
-*.eps
-
 # Matplotlib
 .matplotlib/
 
@@ -62,10 +52,8 @@ results/
 mergeddataset/*.py
 mergeddataset/*.json
 mergeddataset/*.csv
-
-# Data files (uncomment if data should not be committed)
-# data/*.json
-# data/*.csv
+pipeline_statistical/Outputs/descriptor_report_kind.json
+all_reviews_merged_final.json
 
 # Model files / caches (if any)
 *.pkl
