@@ -6,7 +6,12 @@ Documentation pour reproduire :
 
 ---
 
-Exploring how listening experience is transformed into textual information in online music reviews. Drawing on controlled vocabularies and a corpus of 34,689 reviews online music reviews, it adopts an approach combining statistical analysis with an exploratory hybrid method that integrates rule-based patterns and a few-shot Named Entity Recognition (NER) based on a bidirectional transformer model (GLiNER2). This methodology enables the semi-automatic extraction of experiential domains (body, memory, place, social relations) by leveraging contextual information in documents. The findings show that perceptual descriptors do more than qualify sonic properties: they function as discursive anchors through which listening is mediated, apprehended through the active orientation of the subject toward what the sound affords for the regulation and modulation of lived experience.
+This project explores how listening experience is transformed into textual information in online music reviews. Drawing on controlled vocabularies, Pauline Oliveros’ Deep Listening framework, and a corpus of 34,689 reviews, it adopts a mixed-methods approach combining statistical analysis with a hybrid information extraction pipeline that integrates rule-based patterns and few-shot Named Entity Recognition (NER) using a bidirectional transformer model (GLiNER2).
+
+The methodology enables the semi-automatic extraction of experiential domains such as body, memory, place, and social relations, by leveraging contextual information in documents. In line with Oliveros’ distinction between focal and global modes of attention, the results show that perceptual descriptors do more than qualify sonic properties: they function as discursive anchors through which listening is mediated, expressing how sound is apprehended as an active, situated experience.
+
+The analysis also highlights structural limits of entity-centric approaches. While nominal and referential domains (e.g. PERSON, PLACE) are reliably captured by NER, domains such as BODY and MEMORY are more often expressed through predications, effects, and relations rather than stable entities. As a next step, the project will experiment with semantic role labeling for BODY and MEMORY in order to model event-like structures (actor–action–effect) and better capture music as an acting force on the perceiving subject.
+Overall, the project treats online music reviews as informational inscriptions of listening experience, motivating a plural methodological infrastructure in which statistical, lexical, rule-based, and neural methods each make visible different facets of the same phenomenon.
 
 ---
 ## Pour reproduire les analyses
