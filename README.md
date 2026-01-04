@@ -49,9 +49,8 @@ Ce pipeline opère à l’échelle du document et du corpus. Il comprend le char
 ## Pipeline expérientiel : méthodes hybrides extraction d'information 
 
 Ce pipeline vise l’identification de domaines de médiation de l’expérience d’écoute, au-delà des seuls descripteurs lexicaux.
-- **Une première approche repose sur des règles lexicales (regex)**
-- **En complément, une extraction d’entités en few-shot est réalisée avec le modèle GLiNER2** pour les catégories BODY, MEMORY, PLACE et PERSON, appliquée à un échantillon aléatoire stratifié (trois phrases par critique), avec des seuils spécifiques par catégorie et une stabilisation des taux par bootstrap.
-
+- **Une première approche repose sur des règles lexicales (regex)** À des fins d'exploration, cette approche priorise le rappel (couverture) pour repérer des rôles référentiels génériques. Cette limite motive le recours à GLiNER2 en complément, afin d’identifier des mentions référentielles au-delà de la correspondance exacte. 
+- **En complément, une extraction d’entités en few-shot est réalisée avec le modèle GLiNER2** l’extraction d’entités repose sur un échantillon aléatoire stratifié de 200 critiques par source, sous contrainte de longueur (450–650 jetons). Pour chaque critique, trois phrases ont été sélectionnées aléatoirement. L’extraction a été réalisée à l’aide du modèle GLiNER2 small v2.1, avec un seuil global de 0,45, ajusté par seuils spécifiques par catégorie (BODY = 0,50 ; MEMORY = 0,60 ; PLACE = 0,65 ; PERSON = 0,65). Les taux ont été stabilisés par bootstrap (1 000 itérations), l’ensemble du protocole étant rendu reproductible par l’utilisation d’un seed fixe (42).
 
 ---
 ## Structure du dépôt
@@ -74,16 +73,20 @@ listening-experience-text-mining/
 │   │   ├── descriptor_profiles.py
 │   │   └── diagnostics.py
 │   └── main.py
-│
+│   ├── Lexicons/
+│   │   ├── perceptual_adjectives_complete.json
+│   │   └── musico_technical_complete.json
+│   ├── outputs/
+│      ├── figures/
+│      └── tables/
+│   ├── features/
+│   │   ├── descriptor_extraction.py
+│   │   ├── tokenization.py
+│   │   └── vectorization_matrices.py
+│   ├── reporting/
+│   │   ├── descriptor_reports.py
+│   │
 ├── pipeline_experiential/
 │   ├── rulebased_patterns.py
 │   ├── rulebased_amazonclassicalopera.py
 │   └── gliner_extraction.py
-│
-├── Lexicons/
-│   ├── perceptual_adjectives_complete.json
-│   └── musico_technical_complete.json
-│
-└── outputs/
-    ├── figures/
-    └── tables/
